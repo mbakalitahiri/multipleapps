@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "authentication-start": "ng serve --project=\"authentication\" --port 4200",
+    "admin-start": "ng serve --project=\"admin\" --port 4201",
+    "customer-start": "ng serve --project=\"customer\" --port 4202"
   },
   "private": true,
   "dependencies": {
@@ -18,11 +21,14 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "bootstrap": "^4.5.0",
+    "ngx-cookie-service": "^14.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~13.3.9",
     "@angular/cli": "~13.3.6",
     "@angular/compiler-cli": "~13.3.0",
     "@types/jasmine": "~3.10.0",
